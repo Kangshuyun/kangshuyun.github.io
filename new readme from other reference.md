@@ -1,18 +1,33 @@
 CREATE todoapp---> todo--->add todo to settings.py and create view for the htmlfile and 
         |                  add this view to urls.py of todo(only make changes at the bottom)
         |                  now go to settings.py and makechanges to the template list and find 
-        |                  section called DIRS AND now create a model todo_list_item(to represent each todo item 
-        |                  the model will automaticalley create and store the item in the database
+        |                  section called DIRS AND now create a model todo_list_item(to 
+        |                  represent each todo item 
+        |                  the model will automaticalley create and store the item in the 
+        |                   database
         |                  open cmd prompt and type (python manage.py migrations)
-        |                  after execution next cmd: python manage.py migrate (by this we will be able
+        |                  after execution next cmd: python manage.py migrate (by this we will 
+        |                  be able
         |                   able to view the changes)
         |                  retrieve todo-items to the view.py file
         |                  open view.py and import the model todo_list_item
-        |                  create new variable to store the todoitems and return it to template list
+        |                  create new variable to store the todoitems and return it to template 
+        |                   list so make the following changes in view(refer below)
+        |                   go to template and create a list to show all todo items (using loop  
+        |                   to iterate throught the list of items we have in all_items variable
+        |                   two input field i.e text box + submit button
+        |                   refresh the url
+        |                   open views.py to handle the post request on clicking the submit butto
+        |                    (using method called HttpResponseRedirect therefore needed to be 
+        |                     imporeted)
+        |                   urls.py create path for the view the create
+        |                   and finally add delete button 
         |                  
         |
         |
         |------> templates ---> todohtml.html
+note : after creating view add the path to urls.py everytime also dont foreget to import the addtoodoview to urls.py 
+
 
 
 1. INSTALL DJANGO (pip install django) NOTE: on linux or mac os pip3 install django
